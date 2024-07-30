@@ -1,0 +1,417 @@
+/*!
+ * Socializer - CSS library for social media buttons
+ * Copyright (c) 2023 Aakash Chakravarthy - www.aakashweb.com
+ * MIT license
+ */
+.socializer {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.socializer > * {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+}
+.socializer a {
+  font-family: sans-serif !important;
+  display: inline-flex;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-style: solid;
+  box-sizing: content-box;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+.socializer a > * {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+.socializer:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.sr-48px {
+  min-height: 48px;
+}
+.sr-48px a {
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+}
+.sr-48px.sr-font-sm a {
+  font-size: 16px;
+}
+.sr-48px.sr-font-lg a {
+  font-size: 32px;
+}
+.socializer .sr-phone a,
+.socializer .sr-phone a:visited {
+  color: #1a73e8;
+  border-color: #1a73e8;
+  background-color: #1a73e8;
+  margin-right: 5px;
+}
+.socializer .sr-whatsapp a,
+.socializer .sr-whatsapp a:visited {
+  color: #25d366;
+  border-color: #25d366;
+  background-color: #25d366;
+  margin-left: 5px;
+}
+.sr-text-in a {
+  width: auto;
+  padding: 0 1em;
+  overflow: hidden;
+}
+.sr-text-in a > * {
+  padding-right: 0.5em;
+}
+.sr-text-in a > :last-child {
+  padding-right: 0;
+}
+.sr-text-in .text {
+  font-size: 0.8em;
+}
+.sr-text-out a {
+  vertical-align: middle;
+}
+.sr-text-out .text {
+  font-size: 0.8em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+.sr-text-below {
+  text-align: center;
+}
+.sr-text-below .text {
+  display: block;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+.sr-text-hover .text {
+  display: none;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  width: 100px;
+  top: -3em;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 2em;
+  margin-left: -25%;
+  z-index: 9999;
+}
+.sr-text-hover .text:before {
+  position: absolute;
+  content: "";
+  border: 0.5em solid red;
+  bottom: -1em;
+  left: 1em;
+  width: 0;
+  height: 0;
+  border-color: #000 transparent transparent transparent;
+}
+.sr-text-hover:hover > .text {
+  display: block;
+}
+.sr-bdr-sm.socializer a {
+  border-width: 1px;
+}
+.sr-bdr-md.socializer a {
+  border-width: 2px;
+}
+.sr-bdr-lg.socializer a {
+  border-width: 3px;
+}
+.sr-bdr-none.socializer a {
+  border-width: 0;
+}
+.sr-bdr-white.socializer a,
+.sr-bdr-white.socializer a:visited {
+  border-color: #fff;
+}
+.sr-bdr-dark.socializer a,
+.sr-bdr-dark.socializer a:visited {
+  border-color: #000;
+}
+.sr-bdr-grey.socializer a,
+.sr-bdr-grey.socializer a:visited {
+  border-color: #ccc;
+}
+.sr-bg-white.socializer a,
+.sr-bg-white.socializer a:visited {
+  background-color: #fff;
+}
+.sr-bg-dark.socializer a,
+.sr-bg-dark.socializer a:visited {
+  background-color: #333;
+}
+.sr-bg-grey.socializer a,
+.sr-bg-grey.socializer a:visited {
+  background-color: #ccc;
+}
+.sr-bg-none.socializer a,
+.sr-bg-none.socializer a:visited {
+  background-color: transparent;
+}
+.sr-icon-white.socializer a,
+.sr-icon-white.socializer a:visited {
+  color: #fff;
+}
+.sr-icon-dark.socializer a,
+.sr-icon-dark.socializer a:visited {
+  color: #333;
+}
+.sr-icon-grey.socializer a,
+.sr-icon-grey.socializer a:visited {
+  color: #ccc;
+}
+.sr-sw-1.socializer a {
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+}
+.sr-sw-2.socializer a {
+  box-shadow: inset 0 -0.1em 0.1em rgba(0, 0, 0, 0.3);
+}
+.sr-sw-3.socializer a {
+  box-shadow: 0 -0.1em 0.1em rgba(0, 0, 0, 0.3);
+}
+.sr-sw-icon-1.socializer a i {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.sr-count-1 span.ctext {
+  background: #ff5722;
+  position: absolute;
+  top: -0.6em;
+  right: -0.6em;
+  border-radius: 1em;
+  font-size: 0.6em;
+  line-height: 1;
+  padding: 0.3em 0.5em !important;
+  z-index: 99;
+  color: #fff;
+  box-shadow: 0 1px 3px -1px #000;
+}
+.sr-count-2 span.ctext {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0.5em;
+  font-weight: 700;
+  line-height: 0.8em;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+}
+.sr-count-3 span.ctext {
+  font-size: 0.8em;
+  margin: 0;
+  font-weight: 700;
+  line-height: 0.8em;
+  border-left: 1px solid;
+  padding: 0 0 0 0.8em;
+}
+.sr-vertical.sr-count-2 span.ctext {
+  font-size: 0.6em;
+  border-radius: 0;
+  padding: 0.5em;
+  width: 100%;
+}
+.sr-vertical.sr-count-3 span.ctext {
+  font-size: 0.6em;
+  border-radius: 0;
+  border-top: 1px solid;
+  padding: 0.5em;
+  border-left: 0;
+  width: 100%;
+}
+.sr-vertical.sr-count-2 .sr-text-in a,
+.sr-vertical.sr-count-3 .sr-text-in a {
+  height: auto;
+}
+.sr-vertical.sr-count-2 .sr-text-in a i,
+.sr-vertical.sr-count-3 .sr-text-in a i {
+  margin: 0.5em 0;
+}
+.sr-bb-1 .sr-text-in {
+  margin-right: 3.5em;
+}
+.sr-bb-1 a {
+  position: relative;
+  overflow: visible;
+}
+.sr-bb-1 span.ctext {
+  font-size: 0.8em;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 3px;
+  color: #333;
+  position: absolute;
+  width: 3em;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  right: -3.5em;
+  border: 1px solid #dfdfdf;
+}
+.sr-vertical.sr-bb-1 span.ctext {
+  display: block;
+  position: static;
+  width: 100%;
+  margin: 0;
+  font-size: 0.7em;
+  line-height: 1;
+  padding: 0.3em 0;
+  margin-top: -0.3em;
+}
+.sr-circle a {
+  border-radius: 50%;
+}
+.sr-circle .sr-text-in a,
+.sr-circle.sr-text-in a {
+  border-radius: 1em;
+}
+.sr-squircle .sr-text-in a,
+.sr-squircle a,
+.sr-squircle.sr-text-in a {
+  border-radius: 0.5em;
+}
+.sr-squircle-2 .sr-text-in a,
+.sr-squircle-2 a,
+.sr-squircle-2.sr-text-in a {
+  border-radius: 0 0.5em 0 0.5em;
+}
+.sr-diamond a {
+  transform: rotate(45deg);
+}
+.sr-diamond a > * {
+  transform: rotate(-45deg);
+}
+.sr-drop a {
+  border-radius: 50% 50% 0 50%;
+}
+.sr-drop .sr-text-in a {
+  border-radius: 1em 1em 0 1em;
+}
+.sr-ribbon a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - 0.25em / 2);
+  border-style: solid;
+  border-color: inherit;
+  border-bottom-color: transparent;
+  border-width: 0 1em 0.5em 1em;
+}
+.sr-ribbon.sr-vertical > * {
+  margin-bottom: 1em !important;
+}
+.sr-fluid {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.sr-fluid > * {
+  float: none;
+  width: 100%;
+}
+.sr-fluid a {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 0.5em;
+}
+.sr-fluid.sr-pad {
+  border-spacing: 0.25em;
+}
+.sr-fluid .sr-text-in a > *,
+.sr-fluid.sr-text-in a > * {
+  margin-right: 0.5em;
+}
+.sr-fluid .sr-text-in a > :last-child,
+.sr-fluid.sr-text-in a > :last-child {
+  margin-right: 0;
+}
+.sr-fluid .sr-text-in a:last-child,
+.sr-fluid.sr-text-in a:last-child {
+  margin: 0;
+}
+.sr-fluid.sr-squircle a {
+  border-radius: 0.5em;
+}
+.sr-fluid.sr-squircle-2 a {
+  border-radius: 0 0.5em 0 0.5em;
+}
+.sr-fluid .sr-more li {
+  display: block;
+  width: 100%;
+}
+.sr-zoom a:hover {
+  transform: scale(1.1);
+  z-index: 9999;
+}
+.sr-zoom a:active {
+  transform: scale(0.9);
+}
+.sr-pad > * {
+  margin-right: 0.5em;
+}
+.socializer.sr-pad > :last-child {
+  margin: 0 !important;
+}
+.sr-more .socializer {
+  background: #fff;
+  padding: 0.5em;
+  position: absolute;
+  display: none;
+  box-shadow: 0 2px 6px -2px;
+  z-index: 9999;
+}
+.sr-more .socializer:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border: 0.25em solid;
+  border-color: transparent transparent #fff transparent;
+  top: -0.5em;
+  left: 0.5em;
+}
+.sr-more .socializer:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.sr-more .socializer > * {
+  margin: 0 0 0.5em 0;
+}
+.sr-more .socializer > :last-child {
+  margin-bottom: 0;
+}
+.sr-more:hover .socializer {
+  display: block;
+}
+.sr-sharebar {
+  position: fixed;
+  z-index: 9999;
+}
+.sr-sb-hl {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sr-sb-top {
+  top: 30px;
+}
